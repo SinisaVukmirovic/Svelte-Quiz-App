@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap');
+
+:root {
+	--svelte-clr: #ff3e00;;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	position: relative;
+}
+
+body {
+	background: #333;
+	color: #eee;
+	font-family: 'Verdana', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+a {
+	color: cornflowerblue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: cornflowerblue;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	background-color: royalblue;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: .25em;
+	padding: .5em 1em;
+	font-size: 1.25rem;
+	cursor: pointer;
+	transition: all 250ms;
+}
+
+button:hover {
+	filter: brightness(90%);
+	transform: scaleX(1.01) scaleY(1.1);
+}
+
+button:disabled {
+	background-color: #aaa;
+	cursor: not-allowed;
+}
+
+button:active {
+	background-color: #79a3f1;
+}
+
+button:focus {
+	border-color: #aaa;
+}
+
+@media screen and (max-width: 900px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 567px) {
+	html {
+		font-size: 10px;
+	}
+}
