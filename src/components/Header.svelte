@@ -15,7 +15,7 @@
             text-transform: uppercase;
             font-size: 2.5rem;
             line-height: 64px;
-            margin-top: 5px;
+            margin-top: 8px;
         }
 </style>
 

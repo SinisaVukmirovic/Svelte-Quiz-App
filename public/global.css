@@ -15,9 +15,9 @@ html, body {
 }
 
 body {
+	font-family: 'Overpass', sans-serif;
 	background: #333;
 	color: #eee;
-	font-family: 'Verdana', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -48,33 +48,23 @@ input[type="range"] {
 }
 
 button {
+	font-family: 'Overpass', sans-serif;
 	background-color: royalblue;
 	color: #fff;
 	outline: none;
 	border: none;
 	border-radius: .25em;
-	padding: .5em 1em;
+	padding: .75em 1em .5em;
 	font-size: 1.25rem;
+	line-height: 1;
 	cursor: pointer;
 	transition: all 250ms;
 }
 
-button:hover {
-	filter: brightness(90%);
-	transform: scaleX(1.01) scaleY(1.1);
-}
-
-button:disabled {
-	background-color: #aaa;
-	cursor: not-allowed;
-}
-
+button:hover,
 button:active {
-	background-color: #79a3f1;
-}
-
-button:focus {
-	border-color: #aaa;
+	filter: brightness(110%);
+	transform: scaleX(1.01) scaleY(1.05);
 }
 
 @media screen and (max-width: 900px) {
