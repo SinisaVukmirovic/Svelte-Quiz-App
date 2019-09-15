@@ -13,45 +13,63 @@
             question: 'Svelte is...',
             correctAnswer: 0,
             answers: [
-                'the Best',
-                'mehh'
+                'amazing',
+                'ok'
             ]
         },
         {
             question: 'React is...',
-            correctAnswer: 0,
+            correctAnswer: 1,
             answers: [
-                'not reactive',
+                'reactive',
+                'not reactive'
+            ]
+        },
+        {
+            question: 'Svelte is...',
+            correctAnswer: 2,
+            answers: [
+                'fast',
                 'small',
-                'fast'
+                'all of the above'
+            ]
+        },
+        {
+            question: 'Svelte has...',
+            correctAnswer: 1,
+            answers: [
+                'more code',
+                'less code',
+                'framework code'
             ]
         },
         {
             question: 'The best one is...',
-            correctAnswer: 0,
+            correctAnswer: 2,
             answers: [
-                'Svelte',
                 'Angular',
                 'Vue',
+                'Svelte',
                 'React'
             ]
         },
         {
-            question: 'React is a __________ for React.js',
+            question: 'React is a ______________ for React.js',
             correctAnswer: 0,
             answers: [
                 'terrible name',
                 'adequate name',
-                'fitting name',
+                'perfect name',
+                'fitting name'
             ]
         },
         {
             question: 'Trully reactive is...',
-            correctAnswer: 0,
+            correctAnswer: 1,
             answers: [
+                'React',
                 'Svelte',
                 'Vue',
-                'React',
                 'Angular'
             ]
         }
@@ -63,23 +81,40 @@
 
         if (isCorrect) {
             score += 1;
+            quiz[currentQuestion].question = 'Correct!';
+            
+            document.querySelector('.answers').style.display = 'none';
         }
-
-        currentQuestion += 1;
-
-        if (currentQuestion === quiz.length) {
-            currentQuestion = 0;
-            score = 0;
+        else {
+            quiz[currentQuestion].question = 'Wrong!';
+            
+            document.querySelector('.answers').style.display = 'none';
         }
+        
+        if (currentQuestion < quiz.length - 1) {
+            setTimeout(function() {
+                currentQuestion += 1;
+                
+                document.querySelector('.answers').style.display = 'grid';
+            }, 2000);
+        }
+        else {
+            setTimeout(() => {
+                quiz[currentQuestion].question = `Quiz Finished! 
+                    You scored ${score}/${quiz.length} points!`;
 
+                document.querySelector('.answers').style.display = 'none';
+            }, 4000);            
+        }
     }
+    
 </script>
 
 <style>
 	.app  {
         width: 90%;
         max-width: 60rem;
-        margin: 3em auto;
+        margin: 5em auto;
         padding: 1em 3em;
         background-color: #222;
     }
