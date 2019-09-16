@@ -104,10 +104,9 @@
                     You scored ${score}/${quiz.length} points!`;
 
                 document.querySelector('.answers').style.display = 'none';
-            }, 4000);            
+            }, 2000);            
         }
     }
-    
 </script>
 
 <style>

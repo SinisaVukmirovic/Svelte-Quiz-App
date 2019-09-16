@@ -3,8 +3,6 @@
 </script>
 
 <style>
-    /* @import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap'); */
-
     .score-board {
         color: #ccc;
         font-size: 1.25rem;
@@ -15,8 +13,6 @@
         border-bottom: 2px solid #555;
     }
         .score-board span {
-            font-family: monospace;
-            /* font-variant-numeric: tabular-nums; */
             color: var(--svelte-clr);
             font-size: 3rem;
             font-weight: bold;

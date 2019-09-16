@@ -21,6 +21,6 @@
 
 <!-- Mark Up -->
 <header>
-    <img src="../svelte-logo-horizontal.svg" alt="Svelte logo">
+    <img src="svelte-logo-horizontal.svg" alt="Svelte logo">
     <h1>Quiz</h1>
 </header>
