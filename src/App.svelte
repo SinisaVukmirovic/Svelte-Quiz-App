@@ -3,6 +3,7 @@
     import Score from './components/Score.svelte';
     import Question from './components/Question.svelte';
     import Answer from './components/Answer.svelte';
+    import Footer from './components/Footer.svelte';
     
     let score = 0;
 
@@ -26,31 +27,21 @@
             ]
         },
         {
-            question: 'Svelte is...',
-            correctAnswer: 2,
-            answers: [
-                'fast',
-                'small',
-                'all of the above'
-            ]
-        },
-        {
             question: 'Svelte has...',
             correctAnswer: 1,
             answers: [
-                'more code',
-                'less code',
-                'framework code'
+                'framework code',
+                'compiled vanilla code'
             ]
         },
         {
-            question: 'The best one is...',
-            correctAnswer: 2,
+            question: 'Svelte is...',
+            correctAnswer: 3,
             answers: [
-                'Angular',
-                'Vue',
-                'Svelte',
-                'React'
+                'fast',
+                'small',
+                'component scoped',
+                'all of the above'
             ]
         },
         {
@@ -64,6 +55,16 @@
             ]
         },
         {
+            question: 'The best one is...',
+            correctAnswer: 2,
+            answers: [
+                'Angular',
+                'Vue',
+                'Svelte',
+                'React'
+            ]
+        },
+        {
             question: 'Trully reactive is...',
             correctAnswer: 1,
             answers: [
@@ -72,7 +73,19 @@
                 'Vue',
                 'Angular'
             ]
-        }
+        },
+        {
+            question: 'Who has wrong opinion on Svelte?',
+            correctAnswer: 0,
+            answers: [
+                'Dylan Israel',
+                'Traversy Media',
+                'Design Course',
+                'Coding with Jesse',
+                'Dev Ed',
+                'Web Dev Simplified'
+            ]
+        },
     ];
 
     function checkAnswer(answerText) {
@@ -170,3 +183,4 @@
 
 </div>
 
+<Footer />
