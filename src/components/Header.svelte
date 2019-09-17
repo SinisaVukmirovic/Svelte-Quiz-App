@@ -5,6 +5,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 1px solid #eee;
     }
         header img {
             width: 15rem;
